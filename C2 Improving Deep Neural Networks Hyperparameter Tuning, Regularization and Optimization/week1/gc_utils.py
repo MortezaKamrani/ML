@@ -46,6 +46,17 @@ def dictionary_to_vector(parameters):
         count = count + 1
 
     return theta, keys
+p = {
+    "W1" : [[1,1,1],[2,2,2]],
+    "b1" : [[3],[3]],
+    "W2" : [[4,4,4],[5,5,5],[6,6,6]],
+    "b2" : [[7],[7],[7]],
+    "W3" : [[7,7,7],[8,8,8],[9,9,9],[10,10,10]],
+    "b3" : [[11],[11],[11],[11]]
+}
+
+s,_ = dictionary_to_vector(p)
+print(s.shape[0])
 
 def vector_to_dictionary(theta):
     """
